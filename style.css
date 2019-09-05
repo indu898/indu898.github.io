@@ -1,0 +1,84 @@
+
+@media (max-width: 768px) { 
+body{
+    display: grid;
+    grid-template-rows: 10% 10% auto 10%;
+    grid-template-areas:
+    "menu"
+    "header"
+    "main"
+    "footer";
+    min-height: 100vh;
+}
+.float-menu{
+    grid-area: menu;
+    background-color: aqua;
+    }
+    .float-header{
+    grid-area: header;
+    background-color: blue;
+    }
+    
+    .float-main{
+    grid-area: main;
+    background-color: aquamarine;
+    
+    }
+    .float-footer{
+    grid-area: footer;
+    background-color: darkblue;
+    }
+    
+}
+
+@media (min-width: 768.1px){
+    body{
+        display: grid;
+        grid-template-rows: 10% auto 10%;
+        grid-template-columns: 10% auto 60% auto;
+        grid-template-areas:
+        "menu header header header"
+        "menu  .   main       .   "
+        "menu footer footer footer";
+        min-height: 100vh;
+}
+
+.float-menu{
+grid-area: menu;
+background-color: aqua;
+}
+.float-header{
+grid-area: header;
+background-color: blue;
+}
+
+.float-main{
+grid-area: main;
+background-color: aquamarine;
+
+}
+.float-footer{
+grid-area: footer;
+background-color: darkblue;
+}
+}
+
+
+    
+
+
+
+/*.float-menu{
+    grid-area: menu;
+}
+.float-header{
+    grid-area: header;
+}
+.float-main{
+    grid-area: main;
+}
+.float-footer{
+    grid-area: footer;
+}
+*/
+
