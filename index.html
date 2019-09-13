@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Float</title>
 </head>
 
-<body>
-    <nav class="float-menu"></nav>
-    <header class="float-header"></header>
-    <main class="float-main"></main>
-    <footer class="float-footer"></footer>
+<body id="body1">
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-list-item">
+                <p class="menu-header"><strong>Float till Grid</strong></p>
+            </li>
+            <li class="menu-list-item"><a class="menu-list-link active-menu" href="index.html">Float</a>
+            </li>
+            <li class="menu-list-item"><a class="menu-list-link" href="flex.html">Flex</a></li>
+            <li class="menu-list-item"><a class="menu-list-link" href="grid.html">Grid</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1 id="h1">Our header</h1>
+    </header>
+    <main class="float-main main">
+        <p class="float-subject-one subject-style">NS 2002</p>
+        <p class="float-subject-two subject-style">Användning</p>
+        <div class="clear-fix"></div>
+        <p class="float-subject-three subject-style">Problem</p>
+        <p class="float-subject-four  subject-style">Illustrera</p>
+        <div class="clear-fix"></div>
+        <p class="main-text">Float introducerades i Netscape 1.1 år 2002 med syftet att "flyta" en text runt ett annat
+            element, t.ex. en bild.
+        </p>
+        <p class="main-text">
+            Float i samverkan med div-boxar fungerade dock bättre för layout än de tidigare
+            verktygen när man använde tables som var ännu krångligare. Float var aldrig tänkt att användas för sidlayout
+            men det var nu det bästa verktyget som fanns tillgängligt.
+        </p>
+
+        <p class="main-text">
+            Problemet med float när det används för sidlayout är att man måste använda sig av extra markup i html och
+            extra kod i CSS för att få saker att hamna där man vill.
+            Clearfix behövs för att bryta floateffekten nedåt på sidan så att inget content kryper uppåt.
+            En clearfix är en tom div med CSS-stylingen "clear-both".
+            Clearfix är bara ett av många så kallade "hacks" som användes för att kunna använda float som layoutverktyg.
+        </p>
+    </main>
+    <div class="aside"></div>
+    <div class="aside2"></div>
+    <footer class="footer">
+        Kick Ass Footer
+    </footer>
+    <!-- <img id="img" class="aside-image aside" src="images/float5.png" alt="">
+    <img id="img2" class="aside-image2 aside" src="images/float5.png" alt="">-->
+    <script src="indeximg.js"></script>
+    <script src="script.js"></script>
+
+</body>
 
 </html>
