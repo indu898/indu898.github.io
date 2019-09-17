@@ -11,8 +11,16 @@ function addRemoveImage(r) {
         myImage6.setAttribute("id", "image2")
 
     } else {
-        try { document.getElementById("image").remove(); } catch (e) { }
-        try { document.getElementById("image2").remove(); } catch (e) { }
+        const image1 = document.getElementById("image");
+        const image2 = document.getElementById("image2");
+
+        if (image1) {
+            image1.remove();
+        }
+
+        if (image2) {
+            image2.remove();
+        }
     }
 }
 var mql = window.matchMedia("(min-width: 992px)")
